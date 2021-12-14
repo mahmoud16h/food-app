@@ -1,6 +1,21 @@
 .food-card {
   width: 100%;
 }
+.icon-wrapper-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px #A10000;
+}
+
+.icon-wrapper-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px #008ea1;
+}
 
 .card-container {
   padding: 10px;
@@ -8,4 +23,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 300px;
 }

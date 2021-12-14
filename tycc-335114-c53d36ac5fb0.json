@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tycc-335114",
+  "private_key_id": "c53d36ac5fb0397c878d1e33d00dc8ed7afe833c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCw/Lju9S+1G8fh\ncVbNE0hT3TX+caCyB0G4TBOZsX0NrKljCAoKR+bgW8fmjQ6SUETMweCcwDasvFsI\nsf/3XCr2sZOBeSMr2oGLIWS+yc2mu9dnK+StIWW2wWdTpa/HjvmfnQATUTrmaQoV\n6Ayoj+YlHfBLX8njiBBE7OowanW5zH1e1gY/UuwyzhMvnT5Fl3nhmMGU/5KPjHiF\nUDyf0TVSw59O5CdPRiXrBd74T4exiFmwvuVdvieCS3//C1/5kqDdExz9LASxxCKx\n+9tuw97NHpUp7A7fscLpjIceEE9YlEDQ5GkfmCz/tGM/WEeLk0JHXF3V2D3rVK4m\nFBwmy15PAgMBAAECggEAJIOvX9WEBzh5D4EDqIGu7WZ5KkqlHbWzkGNZs97TbwvN\nUpopAB//eRBWeLFnbTZUS25AefaKES83FN8scQs57fWK+i5U3EpTabH1CAu4ewrM\nEQQURMfcJU1XlQFc963+wDhy+IlMvpazNvvOCMTPdZ7soZBcpa2/tYivdFeyfCdk\n/a4bS1s9DJwMV7L0FHvv2F0vsg6ewDwXWRYtosLmLpgdOgMkO8WvOeXSsSX7jQgl\noa+6l7aICZpfXfO2RVPHEoDCddMO9rY7IdHiCMzDPkRzcZJXv10AMrHVdvXwpUIU\nvYgUaAazcxJJPW5oajwXPRcLcNapz8iQkOP8hgSnkQKBgQDrKO+ug8bo2yPSh2dp\nYYQl7JyqX73IP5g4MHvS5muKUyRHXFTAqaicoborIBkBOKPj8WpORD1t5E5JGa2+\nF/rSq/tFAEtccEQRViKI1SYuXvORQYVMVE8kYpIfIwWIT8uc1zp6zAuKwviwvSJ3\nT04bvZcItUpWBgpTqOgycAk1JwKBgQDArAYroLBqHc1puohFtRnkQzLOsCX/4MK1\nz3iXOPrdd0bQV+KlnxW56ly2a4pxvWFySSQAZkHGnzZH1da6E9dzzEGmS5MIq234\nZ0jTKiOpcXy4BZnWJW7bzUcVeOeH3k1YdPF7XC5V+jSyCmfWstJ68LnUcDSkFhgK\nX2XI68TWmQKBgBMuua6ArV8dUSTBStw7yi3VyUnUmYSWO3KJ8e/YP/l+orz3eSpm\nLIzqXGdcLO3+ks/rR4Ku6lvmfcRUxel1x04cHVkZlwwpVEQdxJ9o076AnFnDAH6j\nefk72TOVBcSCzdczb1/I+UAOe37fTspwu6xjoMhjEXdG8ty0MIy8uuONAoGABRMC\nvpdmzgSm6kftWtigK/DRH7xn48tJlXw3UtQ/VyHTDZ2i7HW6HsFbW7qNVN2F+XqP\npisLRG3hAhdRpmjrXbNdb0HCR5IsPUSLGHSdp9LDVB1hpdAqkUNgweIDRwLFyrSZ\nv4P3/G+wf5fikDb5cB9y5XNnD4M9cth8V8RN1NECgYEApbticcpJmYf19ekyJq9G\ncFJagjFZkXzGtKYq4vDaKq1vEYYpfoXMgTjjCUaRWx5T+K6gaKutrtWbfJ+7MnV+\neLbsdBYoXBbqOiU2ei0E4AipGFZ4fC9QI8jvIUECSvBkrTjerkyk/7VMQ41WEGMB\nbloxykP84qWlz/fhtvB2JqU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tyccservice@tycc-335114.iam.gserviceaccount.com",
+  "client_id": "101736206917172170543",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tyccservice%40tycc-335114.iam.gserviceaccount.com"
+}

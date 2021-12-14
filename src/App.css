@@ -7,6 +7,21 @@
   background-color: whitesmoke;
 }
 
+.cards-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .cards-parent {
+    flex-direction: row;
+  }
+}
+
 .App-body {
   min-height: 100vh;
   display: flex;
@@ -16,5 +31,5 @@
   font-size: calc(10px + 2vmin);
   color: black;
   width: 90%;
-  max-width: 600px;
+  max-width: 1000px;
 }

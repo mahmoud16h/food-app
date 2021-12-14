@@ -16,6 +16,7 @@ const AddPage = () => {
         width: '100%'
     }}>
         <TextField
+            required
             value={foodName}
             onChange={(e) => setFoodName(e.target.value)}
             id="filled-basic"
@@ -62,10 +63,10 @@ const AddPage = () => {
                 </div>
             )}
         </ImageUploading>
-        {!!foodName && !!images.length && <Button onClick={() => console.log({
+        <Button disabled={!foodName || !images.length} onClick={() => console.log({
             foodName: foodName,
             foodImage: images[0]
-        })} variant="contained">Post Image</Button>}
+        })} variant="contained">Post Image</Button>
 
     </div>)
 }
