@@ -1,0 +1,11 @@
+.food-card {
+  width: 100%;
+}
+
+.card-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
