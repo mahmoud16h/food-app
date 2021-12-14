@@ -10,6 +10,7 @@ import AddPage from "./pages/addPage";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
+import Logo from './assets/logo.png'
 
 //
 // const darkTheme = createTheme({
@@ -57,10 +58,10 @@ function App() {
     return (
         <div className="App">
             <div className="App-body">
-                <div style={{ padding: '20px', fontWeight: 'bold', fontSize: '22px' }}>Think you can cook?</div>
-                {!addMode && <AddCircleIcon fontSize="large" style={{position: 'absolute', top: '16px', right: '16px'}}
+                <img src={Logo} style={{ width: '300px', padding: '20px'}}/>
+                {!addMode && <AddCircleIcon fontSize="large" style={{position: 'absolute', top: '80px', right: '10px'}}
                                             onClick={() => setAddMode(true)}/>}
-                {addMode && <CancelIcon fontSize="large" style={{position: 'absolute', top: '16px', right: '16px'}}
+                {addMode && <CancelIcon fontSize="large" style={{position: 'absolute', top: '80px', right: '10px'}}
                                         onClick={() => setAddMode(false)}/>}
 
                 {addMode ? <AddPage /> : <LandingPage />}

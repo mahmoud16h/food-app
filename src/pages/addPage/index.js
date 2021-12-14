@@ -21,7 +21,7 @@ const AddPage = () => {
             onChange={(e) => setFoodName(e.target.value)}
             id="filled-basic"
             label="Food name"
-            variant="filled"
+            variant="outlined"
             style={{width: '100%'}}
         />
         <ImageUploading
