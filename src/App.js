@@ -89,7 +89,9 @@ function App() {
     return (
         <div className="App">
             <div className="App-body">
-                <img src={Logo} style={{ width: '300px', padding: '20px'}}/>
+                <div>
+                    <img src={Logo} style={{ width: '300px', padding: '20px'}}/>
+                </div>
                 <div style={{
                     margin: '20px',
                     display: 'flex',

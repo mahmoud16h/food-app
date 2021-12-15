@@ -5,16 +5,16 @@ import axios from "axios";
 
 const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems, setVotedHot, setVotedCold, votedCold, votedHot }) => {
 
+    const randomNumber = Math.floor(Math.random() * (20 - 1 + 1) + 1)
+
     const rateHot = async () => {
-        await rate(rating + 30)
+        await rate(rating + randomNumber)
         setVotedHot([...votedHot, id])
-        console.log('rate hot')
     }
 
     const rateCold = async () => {
-        await rate(rating - 1)
+        await rate(rating - randomNumber)
         setVotedCold([...votedCold, id])
-        console.log('rate cold')
     }
 
     const rate = async (rating) => {
