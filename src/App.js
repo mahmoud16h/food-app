@@ -31,7 +31,7 @@ function App() {
     }
 
     const fetchFoodItems = async () => {
-        axios.get('https://rayan-api-dot-rayan-305323.ew.r.appspot.com/ifg').then(res => setFoodItems(res.data))
+        axios.get('https://rayan-api-dot-rayan-305323.ew.r.appspot.com/ifg').then(res => setFoodItems(res.data.reverse()))
     }
 
     useEffect(() => {
