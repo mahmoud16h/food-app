@@ -37,12 +37,12 @@ const FoodCard = ({ name, imageUrl, rating }) => {
                     <div className="icon-wrapper-red">
                         <WhatshotIcon onClick={rateHot} fontSize="large" style={{ color: '#ff0000', cursor: 'pointer' }}/>
                     </div>
-                    <div style={{ padding: '6px' }}>100</div>
+                    <div style={{ padding: '6px' }}>{rating}</div>
                     <div className="icon-wrapper-blue">
                         <AcUnitIcon onClick={rateCold} fontSize="large" style={{ color: '#61c4ff', cursor: 'pointer' }}/>
                     </div>
                 </div>
-                <div style={{ padding: '10px' }}>Food Name that is really long</div>
+                <div style={{ padding: '10px' }}>{name}</div>
             </div>
         </div>
     );

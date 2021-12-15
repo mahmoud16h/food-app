@@ -2,9 +2,13 @@ import TextField from "@mui/material/TextField";
 import ImageUploading from "react-images-uploading";
 import Button from "@mui/material/Button";
 import {useState} from "react";
+import axios from "axios";
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
-const AddPage = () => {
+const AddPage = ({ closeAdd }) => {
     const [images, setImages] = useState([]);
+    const [loading, setLoading] = useState(false);
     const [foodName, setFoodName] = useState('');
     console.log('images', images)
     return (<div style={{
@@ -63,10 +67,20 @@ const AddPage = () => {
                 </div>
             )}
         </ImageUploading>
-        <Button disabled={!foodName || !images.length} onClick={() => console.log({
-            foodName: foodName,
-            foodImage: images[0]
-        })} variant="contained">Post Image</Button>
+        {loading && <Box sx={{display: 'flex', padding: '40px'}}>
+            <CircularProgress/>
+        </Box>}
+        <Button disabled={!foodName || !images.length || loading} onClick={() => {
+            setLoading(true)
+            const form = new FormData();
+            form.append('file', images[0].file)
+            form.append('name', foodName)
+            axios.post('https://rayan-api-dot-rayan-305323.ew.r.appspot.com/ifg', form).then(res => {
+                setLoading(false)
+                closeAdd()
+            })
+
+        }} variant="contained">Post Image</Button>
 
     </div>)
 }
