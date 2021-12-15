@@ -62,7 +62,7 @@ function App() {
             </div>
         </div>
         <div className="cards-parent">
-            {!!foodItems.length && foodItems.map(item => <FoodCard rating={item.rating || 0} name={item.name || ""} imageUrl={item.imageUrl}/>)}
+            {!!foodItems.length && foodItems.map(item => <FoodCard fetchFoodItems={fetchFoodItems} id={item._id} rating={item.rating || 0} name={item.name || ""} imageUrl={item.imageUrl}/>)}
         </div>
     </>
 

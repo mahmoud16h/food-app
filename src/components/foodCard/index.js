@@ -1,15 +1,24 @@
 import './styles.css'
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
+import axios from "axios";
 
-const FoodCard = ({ name, imageUrl, rating }) => {
+const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems }) => {
 
-    const rateHot = () => {
+    const rateHot = async () => {
+        await rate(rating + 1)
         console.log('rate hot')
     }
 
-    const rateCold = () => {
+    const rateCold = async () => {
+        await rate(rating - 1)
         console.log('rate cold')
+    }
+
+    const rate = async (rating) => {
+        await axios.put(`https://rayan-api-dot-rayan-305323.ew.r.appspot.com/ifg/${id}`, { rating }).then((res) => {
+            fetchFoodItems()
+        } )
     }
 
     return (
