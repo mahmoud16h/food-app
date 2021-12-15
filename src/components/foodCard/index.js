@@ -52,7 +52,7 @@ const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems, setVotedHot, set
                     <div className="icon-wrapper-red">
                         <WhatshotIcon onClick={!hasBeenVoted && rateHot} fontSize="large" style={{ color: hasBeenVotedHot ? '#ff0000' : 'grey', cursor: hasBeenVoted ? 'default' :'pointer' }}/>
                     </div>
-                    <div style={{ padding: '6px' }}>{rating}</div>
+                    <div style={{ padding: '6px', fontWeight: 'bold' }}>{rating}°</div>
                     <div className="icon-wrapper-blue">
                         <AcUnitIcon onClick={!hasBeenVoted && rateCold} fontSize="large" style={{ color: hasBeenVotedCold? '#61c4ff' : 'grey', cursor: hasBeenVoted ? 'default' : 'pointer' }}/>
                     </div>
