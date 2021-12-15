@@ -3,15 +3,17 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import axios from "axios";
 
-const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems }) => {
+const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems, setVotedHot, setVotedCold, votedCold, votedHot }) => {
 
     const rateHot = async () => {
-        await rate(rating + 1)
+        await rate(rating + 30)
+        setVotedHot([...votedHot, id])
         console.log('rate hot')
     }
 
     const rateCold = async () => {
         await rate(rating - 1)
+        setVotedCold([...votedCold, id])
         console.log('rate cold')
     }
 
@@ -21,6 +23,10 @@ const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems }) => {
         } )
     }
 
+    const hasBeenVotedHot = votedHot.includes(id)
+    const hasBeenVotedCold = votedCold.includes(id)
+
+    const hasBeenVoted = hasBeenVotedHot || hasBeenVotedCold;
     return (
         <div className="card-container">
             <img
@@ -44,11 +50,11 @@ const FoodCard = ({ name, imageUrl, rating, id, fetchFoodItems }) => {
             }}>
                 <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'row', justifyContent: 'space-evenly', width: '100%'}}>
                     <div className="icon-wrapper-red">
-                        <WhatshotIcon onClick={rateHot} fontSize="large" style={{ color: '#ff0000', cursor: 'pointer' }}/>
+                        <WhatshotIcon onClick={!hasBeenVoted && rateHot} fontSize="large" style={{ color: hasBeenVotedHot ? '#ff0000' : 'grey', cursor: hasBeenVoted ? 'default' :'pointer' }}/>
                     </div>
                     <div style={{ padding: '6px' }}>{rating}</div>
                     <div className="icon-wrapper-blue">
-                        <AcUnitIcon onClick={rateCold} fontSize="large" style={{ color: '#61c4ff', cursor: 'pointer' }}/>
+                        <AcUnitIcon onClick={!hasBeenVoted && rateCold} fontSize="large" style={{ color: hasBeenVotedCold? '#61c4ff' : 'grey', cursor: hasBeenVoted ? 'default' : 'pointer' }}/>
                     </div>
                 </div>
                 <div style={{ padding: '10px' }}>{name}</div>
